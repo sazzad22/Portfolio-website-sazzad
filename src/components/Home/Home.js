@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
+import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import LogoTitle from '../../assets/images/logo-s.png'
-import Logo from './Logo'
+// import Logo from './Logo'
 import './Home.scss'
 
 const Home = () => {
@@ -26,11 +26,13 @@ const Home = () => {
     'r',
     '.',
   ]
-
+    const hoverAnimation = () => {
+        return setTimeout( () => {
+            setLetterClass('text-animate-hover')
+          }, 4000)
+  }
   useEffect(() => {
-    return setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 4000)
+      hoverAnimation();
   }, [])
 
   return (
@@ -64,10 +66,10 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-        <Logo />
+        {/* <Logo /> */}
       </div>
 
-      <Loader type="pacman" />
+      {/* <Loader type="pacman" /> */}
     </>
   )
 }
