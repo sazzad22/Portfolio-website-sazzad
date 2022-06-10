@@ -7,10 +7,10 @@ import './Layout.scss'
 const Layout = () => {
   return (
     
-    <div className="App min-h-screen">
-      <Sidebar />
+    <div className="App ">
+      {/* <div className='sticky'><Sidebar></Sidebar></div> */}
 
-      <div className='lg:hidden' ><SmNav></SmNav></div>
+      {/* <div className='' ><SmNav></SmNav></div> */}
 
       <h1 className='' >hsdfasfd</h1>
       <div className="page">

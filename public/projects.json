@@ -1,0 +1,70 @@
+
+[
+    {
+        "id":1,
+        "name": "Smart Manufacturer",
+        "url": "https://smart-manufacture.web.app/",
+        "smDescription": "for computer manufacturers to collect electronic parts in different quantity",
+        "Description": "",
+        "clientCode":"https://github.com/sazzad22/Smart-manufacture-clientSite-",
+        "serverCode":"https://github.com/sazzad22/Smart-manufacture--nodeServer-",
+        "img":"",
+        "technology":"React,Node.js, express, mongoDb, Firebase, tailwind css, html"
+      },
+    {
+        "id":2,
+        "name": "Inventory Management",
+        "url": "https://warehouse-management-398a5.web.app/",
+        "smDescription": "providing inventory and management services",
+        "Description": "",
+        "clientCode":"https://github.com/sazzad22/Inventory-Management",
+        "serverCode":"https://github.com/sazzad22/Inventory-management-server",
+        "img":"",
+        "technology":"React,Node.js, express, mongoDb, Firebase, tailwind css, html"
+      },
+    {
+        "id":3,
+        "name": "The Lens Guru",
+        "url": "https://smart-manufacture.web.app/",
+        "smDescription": "for a professional  photographer providing professional services",
+        "Description": "",
+        "clientCode":"https://github.com/sazzad22/Independent-service-provider",
+        "serverCode":"",
+        "img":"",
+        "technology":"React, Firebase,Bootstrap css, html"
+      },
+    {
+        "id":4,
+        "name": "Smart Manufacturer",
+        "url": "https://smart-manufacture.web.app/",
+        "smDescription": "for computer manufacturers to collect electronic parts in different quantity",
+        "Description": "",
+        "clientCode":"",
+        "serverCode":"",
+        "img":"",
+        "technology":"React,Node.js, express, mongoDb, Firebase, tailwind css, html"
+      },
+    {
+        "id":5,
+        "name": "Smart Manufacturer",
+        "url": "https://smart-manufacture.web.app/",
+        "smDescription": "for computer manufacturers to collect electronic parts in different quantity",
+        "Description": "",
+        "clientCode":"",
+        "serverCode":"",
+        "img":"",
+        "technology":"React,Node.js, express, mongoDb, Firebase, tailwind css, html"
+      },
+    {
+        "id":6,
+        "name": "Smart Manufacturer",
+        "url": "https://smart-manufacture.web.app/",
+        "smDescription": "for computer manufacturers to collect electronic parts in different quantity",
+        "Description": "",
+        "clientCode":"",
+        "serverCode":"",
+        "img":"",
+        "technology":"React,Node.js, express, mongoDb, Firebase, tailwind css, html"
+      }
+    
+]
