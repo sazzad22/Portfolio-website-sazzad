@@ -68,7 +68,7 @@ const Home = () => {
 
   // Projects
   useEffect(() => {
-    fetch('projects.json').then(res => res.json()).then(data =>setProjects(data) )
+    fetch('http://localhost:5000/project').then(res => res.json()).then(data =>setProjects(data) )
     
 
   },[])
@@ -117,7 +117,7 @@ const Home = () => {
           <div className="grid lg:grid-cols-3 grid-cols-1 lg:px-0 px-10 gap-20 lg:mx-20 py-20 project">
             
             {
-              projects.map(project=><Project key={project.id} project={project} img={img1} ></Project>)
+              projects.map(project=><Project key={project._id} project={project} img={img1} ></Project>)
             }
           </div>
         </div>

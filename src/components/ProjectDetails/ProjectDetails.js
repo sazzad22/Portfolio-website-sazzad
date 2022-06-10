@@ -1,21 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
-const ProjectDetails = ({ project,  }) => {
-    const { name, url, smDescription, clientCode, serverCode, technology,img } = project;
+const ProjectDetails = () => {
+    const {id} = useParams();
+    const [projects1, setProjects1] = useState([]);
+    useEffect(() => {
+        fetch(`http://localhost:5000/project/${id}`).then(res=>res.json()).then(data=>setProjects1(data))
+    }, [])
+    const { name, url, smDescription, Description, clientCode, serverCode, img, img2, img3, technology } = projects1;
+    
+
     return (
-        <div className='text-white border border-yellow-500 p-1 hover:scale-110 ease-in-out duration-300'>
+        <div className=''>
             <div>
-                <img className='w-full' src={img} alt="" />
+                <h2 className=' text-center my-20 text-secondary lg:text-6xl font-bold'>"{name} Website"</h2>
+                <h2 className=' text-center my-20 text-white lg:text-3xl font-bold'> <span className='text-yellow-200'>Technologies :</span> {technology} </h2>
             </div>
             <div>
-                <h2 className='text-4xl my-4 text-yellow-300'>{name}</h2>
-                <p>{smDescription}</p>
-                
-                <p className='my-5'> <span className='lg:text-xl font-bold ' >Technologies :</span> {technology}</p>
-                <a href={url} class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-secondary m-3">Go To Website</a>
-                <a href={clientCode} class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-primary m-3">Client Site Code</a>
-                {serverCode && <a href={serverCode} class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-accent m-3">Server Code Link</a > }
+                <img className='lg:w-1/2 my-10 border border-secondary p-5 border-2 mx-auto w-3/4 ' src={img} alt="" />
             </div>
+            <div>
+                <img className='lg:w-1/2 my-10 border border-secondary p-5 border-2 mx-auto w-3/4 ' src={img2} alt="" />
+            </div>
+            <div>
+                <img className='lg:w-1/2 my-10 border border-secondary p-5 border-2 mx-auto w-3/4 ' src={img3} alt="" />
+            </div>
+            <div className='w-1/2 mx-auto'>
+                <h2 className=' text-center my-20 text-white lg:text-3xl font-bold'> <span className='text-yellow-200'>Description :</span> {Description} </h2>
+                <div className='mx-auto text-center mb-20'>
+                <a href={url} class="btn btn-xs  sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-secondary m-3">Go To Website</a>
+                <a href={clientCode} class="btn btn-xs  sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-primary m-3">Client Site Code</a>
+                {serverCode && <a href={serverCode} class="btn btn-xs  sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-accent m-3">Server Code Link</a >}
+                </div>
+            </div>
+            
         </div>
     );
 };
