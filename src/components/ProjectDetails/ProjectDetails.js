@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Project = ({ project,  }) => {
+const ProjectDetails = ({ project,  }) => {
     const { name, url, smDescription, clientCode, serverCode, technology,img } = project;
     return (
         <div className='text-white border border-yellow-500 p-1 hover:scale-110 ease-in-out duration-300'>
@@ -20,4 +20,4 @@ const Project = ({ project,  }) => {
     );
 };
 
-export default Project;
+export default ProjectDetails;

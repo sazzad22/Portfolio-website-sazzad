@@ -5,6 +5,7 @@ import Layout from './components/Layout/Layout';
 import Home from './components/Home/Home';
 import SmNav from './components/SmNav/SmNav';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         
 
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

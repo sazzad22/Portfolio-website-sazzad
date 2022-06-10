@@ -34,20 +34,20 @@ const Contact = () => {
 
   return (
     <>
-      <div className="container contact-page">
+      <div className="min-h-screen project">
         <div className="text-zone">
-          <h1>Contact Me</h1>
-          <p>
+          <h1 className="lg:text-6xl text-3xl font-bold text-secondary text-center my-20">Contact Me</h1>
+          <p className="lg:text-4xl text-2xl text-white lg:px-64 py-20 text-center">
             I am interested in freelance opportunities - especially ambitious or
             large projects. However, if you have other request or question,
             don't hesitate to contact me using below form either.
           </p>
-          <div className="contact-form">
+          <div className="contact-form text-center">
             <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input
-                    className="border my-4 border-yellow-400 w-1/2 text-3xl px-2 py-5"
+                    className="border my-4 border-yellow-400 w-1/2 lg:w-1/3 rounded-lg lg:text-3xl text-2xl px-2 lg:py-5 py-4"
                     placeholder="Name"
                     type="text"
                     name="name"
@@ -56,7 +56,7 @@ const Contact = () => {
                 </li>
                 <li className="half">
                   <input
-                    className="border my-4 border-yellow-400 w-1/2 text-3xl px-2 py-5"
+                    className="border my-4 border-yellow-400 w-1/2 lg:w-1/3 rounded-lg lg:text-3xl text-2xl px-2 lg:py-5 py-4"
                     placeholder="Email"
                     type="email"
                     name="email"
@@ -65,7 +65,7 @@ const Contact = () => {
                 </li>
                 <li>
                   <input
-                    className="border my-4 border-yellow-400 w-1/2 text-3xl px-2 py-5"
+                    className="border my-4 border-yellow-400 w-1/2 lg:w-1/3 rounded-lg lg:text-3xl text-2xl px-2 lg:py-5 py-4"
                     placeholder="Subject"
                     type="text"
                     name="subject"
@@ -74,14 +74,14 @@ const Contact = () => {
                 </li>
                 <li>
                   <textarea
-                    className="border my-4 border-yellow-400 w-1/2 text-3xl px-2 py-5"
+                    className="border my-4 border-yellow-400 w-1/2 lg:w-1/3 rounded-lg lg:text-3xl text-2xl px-2 lg:py-5 py-4"
                     placeholder="Message"
                     name="message"
                     required
                   ></textarea>
                 </li>
                 <li>
-                  <input type="submit" className="btn btn-xs sm:btn-sm md:btn-md lg:btn-wide px-24 btn-outline btn-secondary " value="SEND" />
+                  <input type="submit" className="btn  sm:btn-sm md:btn-md lg:btn-wide px-24 btn-outline btn-secondary " value="SEND" />
                 </li>
               </ul>
             </form>
