@@ -9,7 +9,7 @@ const Logo = () => {
   
 
   return (
-    <div className=" lg:w-3/4 w-3/4  " >
+    <div className=" lg:w-3/4 w-full lg:p-0 p-5  " >
       <img
         className=" lg:w-full  project lg:ml-24 lg:pt-20  "
         

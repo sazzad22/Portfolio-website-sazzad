@@ -37,11 +37,11 @@ const Contact = () => {
       <div className="min-h-screen project">
         <div className="text-zone">
           <h1 className="lg:text-6xl text-3xl font-bold text-secondary text-center my-20">Contact Me</h1>
-          <p className="lg:text-4xl text-2xl text-white lg:px-64 py-20 text-center">
-            I am interested in freelance opportunities - especially ambitious or
-            large projects. However, if you have other request or question,
+          <p className="lg:text-4xl text-2xl text-white lg:px-64 py-20 text-center lg:w-3/4 mx-auto">
+            I am interested in Dev job opportunities - especially MERN stack projects. However, if you have other request or question,
             don't hesitate to contact me using below form either.
           </p>
+          <p className="lg:text-5xl text-center text-yellow-300 my-10">Send an Email to me Via this form</p>
           <div className="contact-form text-center">
             <form ref={form} onSubmit={sendEmail}>
               <ul>
@@ -81,7 +81,7 @@ const Contact = () => {
                   ></textarea>
                 </li>
                 <li>
-                  <input type="submit" className="btn  sm:btn-sm md:btn-md lg:btn-wide px-24 btn-outline btn-secondary " value="SEND" />
+                  <input type="submit" className="btn  sm:btn-sm md:btn-md lg:btn-lg w-1/3 px-24  btn-outline btn-accent " value="SEND" />
                 </li>
               </ul>
             </form>

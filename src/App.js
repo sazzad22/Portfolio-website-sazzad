@@ -7,6 +7,8 @@ import SmNav from './components/SmNav/SmNav';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import ProjectDetails from './components/ProjectDetails/ProjectDetails';
+import AboutMe from './components/AboutMe/AboutMe';
+import Blogs from './components/Blogs/Blogs';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path='/' element={<Home></Home>} ></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
         <Route path='/projectdetails/:id' element={<ProjectDetails></ProjectDetails>}></Route>
+        <Route path='/aboutme' element={<AboutMe></AboutMe>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
           
         
         

@@ -7,7 +7,7 @@ const Footer = () => {
   <div>
     
     <p class="font-bold text-primary lg:text-2xl text-xl">
-      Sazzadur Rahman. <br />Web Development Services
+      Sazzadur Rahman. <br />Software Engineer
     </p> 
     <p>Copyright © 2022 - All right reserved</p>
   </div> 
